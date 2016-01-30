@@ -3,6 +3,7 @@ Structure of the directory:
 - `./src` source code
 - `./dist` production code
 - `./gulpfile.js` gulp file
+
 ## Part 1: Optimize PageSpeed Insights score for index.html
 1. How to run app:
     - checkout `./dist/index.html`
@@ -33,6 +34,7 @@ Structure of the directory:
     ```
     - This command will automatically update changes, executes the changes and be watched on terminal screen.
     - The production code on this case is in `./dist` directory
+    
 ## Part 2: Optimize Frames per Second in pizza.html
 1. How to run app:
     - checkout and open `./dist/views/pizza.html`on browser
