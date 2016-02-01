@@ -172,12 +172,13 @@ Structure of the directory:
         changePizzaSizes(size);
         ```
     - declare variable `pizzasDiv = document.getElementById("randomPizzas")` outside the `for` loop
-        ```sh
+
+      ```sh
         var pizzasDiv = document.getElementById("randomPizzas");
         for (var i = 2; i < 100; i++) {
             pizzasDiv.appendChild(pizzaElementGenerator(i));
         }
-        ```
+      ```
     - function `updatePositions()`
         - replace `querySelectorAll` by `getElementsByClassName`
         - declare `var scrollTop = document.body.scrollTop/1250;` to avoid repetition code inside the `for` loop
@@ -224,7 +225,8 @@ Structure of the directory:
         ```
 3. How to optimize Frames per Second on `./src/views/css/style.css`
     - Insert `backface-visibility: hidden`, `transform: translateZ(0)` and `will-change: transform` on `.mover`
-        ```sh
+
+      ```sh
         .mover {
           backface-visibility: hidden;
           transform: translateZ(0);
@@ -233,5 +235,5 @@ Structure of the directory:
           width: 256px;
           z-index: -1;
         }
-        ```
+      ```
     - Add vendor prefixes:
