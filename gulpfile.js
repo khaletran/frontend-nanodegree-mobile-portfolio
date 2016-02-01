@@ -73,10 +73,6 @@ gulp.task('contents', ['scripts', 'styles', 'inlinecss', 'images1', 'images2'], 
         .pipe(gulp.dest('dist/'));
 });
 
-// Execute the gulp
-//gulp.task('default', ['scripts', 'styles', 'inlinecss', 'images1', 'images2', 'contents']);
-
-
 gulp.task('contents-watch', ['contents', 'scripts', 'styles', 'inlinecss', 'images1', 'images2'], browserSync.reload);
 
 gulp.task('scripts-watch', ['contents', 'scripts', 'styles', 'inlinecss', 'images1', 'images2'], browserSync.reload);
@@ -101,6 +97,5 @@ gulp.task('browse', function() {
     gulp.watch(paths.images[0], ['images1-watch']);
     gulp.watch(paths.images[1], ['images2-watch']);
 });
-
 
 gulp.task('default', ['scripts', 'styles', 'inlinecss', 'images1', 'images2', 'contents', 'browse']);
